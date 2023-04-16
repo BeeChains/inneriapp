@@ -13,18 +13,24 @@ Installation
 To install and run InnerIApp, follow these steps:
 <ol>
 <li>Clone the repository to your local machine:</li>
-    ```git clone https://github.com/BeeChains/inneriapp.git```
+    
+    
+         git clone https://github.com/BeeChains/inneriapp.git 
+   
 
 <li>Navigate to the project directory:</li>
     ```cd inneriapp```
 
 <li>Install the dependencies:</li>
-    ```npm install```
+    
+        npm install
 
 <li>Start Back-end</li>
-    ```npm start```
+       
+        npm start
 
 <li>Start Front-end</li>
-    ```npm run start-frontend```
+        
+        npm run start-frontend
 </ol>
-🤝 or try http://localhost:3000/
+🤝 or app is now at http://localhost:3000/
