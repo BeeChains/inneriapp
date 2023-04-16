@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>InnerIApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Add your CSS stylesheet link here -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to InnerIApp</h1>
+      <nav>
+        <ul>
+          <li><a href="https://innerinetcompany.com/">Home</a></li>
+          <li><a href="https://innerinetcompany.com/about/">About</a></li>
+          <li><a href="https://innerinetcompany.com/products/">Products</a></li>
+          <li><a href="https://innerinetcompany.com/inner-i-network/">Inner I Network</a></li>
+          <li><a href="https://innerinetcompany.com/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="intro">
+        <h2>Introducing InnerIApp</h2>
+        <p>
+          InnerIApp is a revolutionary new app that provides you with all the tools you need to manage your online presence in one place.
+        </p>
+      </section>
+
+      <section id="objectives">
+        <h2>Objectives</h2>
+        <ul>
+          <li>Help users manage their online presence.</li>
+          <li>Provide users with tools to buy and sell domains and websites.</li>
+          <li>Offer users hosting options for their websites.</li>
+          <li>Provide a platform for users to connect and network with each other.</li>
+        </ul>
+      </section>
+
+      <section id="features">
+        <h2>Features</h2>
+        <ul>
+          <li>Domain name search and registration.</li>
+          <li>Website builder with customizable templates.</li>
+          <li>Hosting options with automatic backups and security features.</li>
+          <li>Marketplace for buying and selling domains and websites.</li>
+          <li>Social networking features to connect with other users.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 InnerIApp. All rights reserved.</p>
+    </footer>
+
+    <!-- Add your JavaScript script link here -->
+    <script src="src/app.js"></script>
+	 
+    <button onclick="getUsers()">Get Users</button>
+    
+    <script>
+      function getUsers() {
+        fetch('/users')
+          .then(response => response.json())
+          .then(data => {
+            console.log(data);
+            // Do something with the returned data
+          })
+          .catch(error => console.error(error));
+      }
+    </script>
+	<div id="root"></div>
+
+    <script src="https://unpkg.com/react@17.0.2/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/react-router-dom@5.3.0/umd/react-router-dom.min.js"></script>
+    <script src="https://unpkg.com/react-stripe-elements@6.1.1/umd/react-stripe-elements.min.js"></script>
+    <script src="https://unpkg.com/react-paypal-button-v2@2.6.3/umd/react-paypal-button-v2.min.js"></script>
+    <script src="https://unpkg.com/handshake-client@0.4.0/handshake-client.js"></script>
+
+    <script src="src\app.js"></script>
+  </body>
+</html>
