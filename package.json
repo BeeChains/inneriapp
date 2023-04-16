@@ -1,0 +1,56 @@
+{
+  "name": "inneriapp",
+  "version": "1.0.0",
+  "description": "InnerIApp",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "test",
+    "build": "webpack",
+    "start": "node src/app.js",
+    "start-frontend": "react-scripts start --port 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeeChains/inneriapp.git"
+  },
+  "keywords": [
+    "Handshake",
+    "domains",
+    "names",
+    "dns",
+    "hosting",
+    "buy",
+    "sell",
+    "websites"
+  ],
+  "author": "TBD - Inner I Network",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/BeeChains/inneriapp/issues"
+  },
+  "homepage": "https://github.com/BeeChains/inneriapp#readme",
+  "dependencies": {
+    "hs-client": "git+https://github.com/handshake-org/hs-client.git",
+    "react": "^16.14.0",
+    "react-paypal-button-v2": "^2.6.3",
+    "react-router-dom": "^6.10.0",
+    "react-stripe-elements": "^6.1.2"
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
